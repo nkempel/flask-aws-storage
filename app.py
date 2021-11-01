@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
-BUCKET = os.environ.get('BUCKET_NAME')
+BUCKET = "lats-image-data"
 
 @app.route("/")
 def home():
